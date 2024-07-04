@@ -1,8 +1,6 @@
 import styles from '../styles/Home.module.css';
-import UploadForm from './components/uploadImage';
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <div>
