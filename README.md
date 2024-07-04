@@ -14,7 +14,9 @@ Step 5: In that terminal, run "node addSchema"
 
 Step 6: In that same terminal, run "node addImages"
 
-Step 7: (Note you mat have to restart your computer before you do this step) run 'npm run dev'
+Step 7: (Note you mat have to restart your computer before you do this step) run 'npm run dev' in the first terminal that is connected to the root
 
 Step 8: Go to 'http://localhost:3000/' in your browser and from there you should see the website
+
+Note: After completing these steps, to run this project again you do not need to run steps 3-5 again
 </p>
