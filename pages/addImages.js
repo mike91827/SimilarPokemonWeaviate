@@ -5,7 +5,7 @@ import weaviate from 'weaviate-ts-client';
 
 async function addAllImages(client) {
     console.log("starting to add images")
-    const imgFiles = readdirSync('pages/kaggle/pokemon')
+    const imgFiles = readdirSync(process.cwd(),'pages/kaggle/pokemon')
     imgFiles.map(async (imgFile) => {
 
         const fileData = fs.readFileSync(path.join(process.cwd(), 'pages', 'kaggle', 'pokemon', imgFile));
