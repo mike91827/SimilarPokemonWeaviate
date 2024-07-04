@@ -5,10 +5,10 @@ import weaviate from 'weaviate-ts-client';
 
 async function addAllImages(client) {
     console.log("starting to add images")
-    const imgFiles = readdirSync(process.cwd(),'pages/kaggle/pokemon')
+    const imgFiles = readdirSync(process.cwd() + '/kaggle/pokemon')
     imgFiles.map(async (imgFile) => {
 
-        const fileData = fs.readFileSync(path.join(process.cwd(), 'pages', 'kaggle', 'pokemon', imgFile));
+        const fileData = fs.readFileSync(path.join(process.cwd(), 'kaggle', 'pokemon', imgFile));
 
         const b64 = fileData.toString('base64');
         await client.data.creator()
@@ -33,7 +33,7 @@ async function main() {
     try {
         
         await addAllImages(client)
-        console.log('Schema added successfully');
+        console.log('image added successfully');
     } catch (error) {
         console.error('Error adding schema:', error);
     }

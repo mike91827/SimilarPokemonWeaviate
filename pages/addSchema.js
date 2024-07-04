@@ -1,6 +1,3 @@
-import { readdirSync } from 'fs';
-import path from 'path';
-import fs from 'fs';
 import weaviate from 'weaviate-ts-client';
 
 async function addPokemonSchema(client) {
