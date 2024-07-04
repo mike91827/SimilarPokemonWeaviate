@@ -5,6 +5,16 @@ const UploadForm = () => {
   const [imageUrl, setImageUrl] = useState('');
   const [weavImageUrl, weavSetImageUrl] = useState('');
 
+  const buttonStyles = {
+    backgroundColor: '#007BFF',
+    color: '#fff',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '1rem',
+  };
+
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
   };
@@ -45,8 +55,8 @@ const UploadForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="file" onChange={handleFileChange} />
-        <button type="submit">Upload</button>
+        <input type="file" onChange={handleFileChange}/>
+        <button type="submit" style={buttonStyles}>Upload</button>
       </form>
      
       {imageUrl && (
