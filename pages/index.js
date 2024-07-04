@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css';
+import UploadForm from '.uploadImage.tsx'
 
 export default function Home() {
   return (
